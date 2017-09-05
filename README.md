@@ -3,8 +3,18 @@
 A Social-Blogging App developed with Golang & Mysql!!
 
 # Quick Links
-1. [Requirements](#requirements)
-2. [Usage](#usage)
+1. [Screenshots](#screenshots)
+2. [Requirements](#requirements)
+3. [Usage](#usage)
+
+# Screenshots
+![alt text](https://raw.githubusercontent.com/yTakkar/Go-Social-Blogging-App/master/screenshots/Snap%202017-09-05%20at%2015.40.35.png)
+![alt text](https://raw.githubusercontent.com/yTakkar/Go-Social-Blogging-App/master/screenshots/Snap%202017-09-05%20at%2015.40.46.png)
+![alt text](https://raw.githubusercontent.com/yTakkar/Go-Social-Blogging-App/master/screenshots/Snap%202017-09-05%20at%2015.40.54.png)
+![alt text](https://raw.githubusercontent.com/yTakkar/Go-Social-Blogging-App/master/screenshots/Snap%202017-09-05%20at%2015.41.31.png)
+![alt text](https://raw.githubusercontent.com/yTakkar/Go-Social-Blogging-App/master/screenshots/Snap%202017-09-05%20at%2015.41.39.png)
+![alt text](https://raw.githubusercontent.com/yTakkar/Go-Social-Blogging-App/master/screenshots/Snap%202017-09-05%20at%2015.41.10.png)
+![alt text](https://raw.githubusercontent.com/yTakkar/Go-Social-Blogging-App/master/screenshots/Snap%202017-09-05%20at%2015.41.47.png)
 
 # Requirements
 1. Make sure you have the correct golang folder structure.
