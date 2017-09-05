@@ -1,1 +1,1 @@
-# Go-Blog-App
+# Go-Social-Blogging-App
