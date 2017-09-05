@@ -17,9 +17,8 @@ A Social-Blogging App developed with Golang & Mysql!!
 ![alt text](https://raw.githubusercontent.com/yTakkar/Go-Social-Blogging-App/master/screenshots/Snap%202017-09-05%20at%2015.41.47.png)
 
 # Requirements
-1. Make sure you have the correct golang folder structure.
-2. `$GOPATH` is setup successfully & perfectly!!
-3. Following packages should be installed.
+1. Make sure you keep this project inside `src/` of your Golang project folder.
+2. Following packages should be installed.
     1. [httprouter](https://github.com/julienschmidt/httprouter)
     2. [negroni](https://github.com/urfave/negroni)
     3. [checkmail](https://github.com/badoux/checkmail)
