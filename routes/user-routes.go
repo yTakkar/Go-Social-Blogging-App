@@ -1,7 +1,7 @@
 package routes
 
 import (
-	M "Go-Blog-App/models"
+	M "Go-Social-Blogging-App/models"
 	"log"
 	"net/http"
 	"os"
@@ -16,13 +16,13 @@ import (
 // Signup route
 func Signup(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 	notLoggedIn(w, r)
-	renderTemplates(w, "signup", &Page{"Signup to note", nil, nil, nil, nil})
+	renderTemplates(w, "signup", &Page{"Signup to blog", nil, nil, nil, nil})
 }
 
 // Login route
 func Login(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 	notLoggedIn(w, r)
-	renderTemplates(w, "login", &Page{"Login to note", nil, nil, nil, nil})
+	renderTemplates(w, "login", &Page{"Login to blog", nil, nil, nil, nil})
 }
 
 // Logout route

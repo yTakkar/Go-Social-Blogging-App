@@ -1,7 +1,7 @@
 package main
 
 import (
-	R "Go-Blog-App/routes"
+	R "Go-Social-Blogging-App/routes"
 	"os"
 
 	"github.com/joho/godotenv"

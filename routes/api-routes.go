@@ -1,7 +1,7 @@
 package routes
 
 import (
-	M "Go-Blog-App/models"
+	M "Go-Social-Blogging-App/models"
 	"log"
 	"net/http"
 	"strconv"
@@ -23,7 +23,7 @@ func CreateNewBlog(w http.ResponseWriter, r *http.Request, _ httprouter.Params) 
 		log.Fatal(err)
 	}
 
-	res["mssg"] = "Note created!!"
+	res["mssg"] = "Blog created!!"
 	M.JSON(w, r, res)
 }
 

@@ -1,7 +1,7 @@
 package routes
 
 import (
-	M "Go-Blog-App/models"
+	M "Go-Social-Blogging-App/models"
 	"fmt"
 	"net/http"
 
