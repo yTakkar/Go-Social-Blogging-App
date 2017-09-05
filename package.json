@@ -1,0 +1,27 @@
+{
+  "name": "go-blog-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "start": "go run main.go",
+    "build": "go build",
+    "js:dev": "webpack -d --watch",
+    "js:build": "webpack -p --watch"
+  },
+  "author": "yTakkar <www.shtakkar@gmil.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "handy-notification": "^1.0.23",
+    "handy-tooltip": "^1.0.10",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.5.0"
+  }
+}

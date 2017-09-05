@@ -1,0 +1,61 @@
+{{ template "header" . }}
+{{ template "needs" }}
+
+<div class="info"
+  data-user="{{ .UserID }}"
+  data-username="{{ .Username }}"
+></div>
+
+{{ $len := len .Blogs }}
+{{ $id := .UserID }}
+{{ $username := .Username }}
+
+<div class="notes_wrapper">
+  <div class="home">
+
+    <div class="home_info">
+      <span>{{ $len }} Notes</span>
+      <a href="/create-blog" class="pri_btn">Create Blog</a>
+    </div>
+
+    {{ if not .Blogs }}
+      <div class='home_last_mssg'>
+        <img src='/images/large.jpg' />
+        <span>No notes for you. Go ahead and create one!!</span>
+      </div>
+    {{ end }}
+
+    {{ if .Blogs }}
+      {{ range $blog := .Blogs }}
+
+        <a href='/blog/{{ $blog.BlogID }}'>
+          <div class="note">
+            <div class="note_header common_header">
+              <img src='/users/{{ $id }}/avatar.png' alt='' />
+              <div class="note_h_left">
+                <span class="note_username">{{ $username }}</span>
+                <span class='note_time'>1 million years ago</span>
+              </div>
+            </div>
+            <div class="note_title">
+              <span>{{ $blog.Title }}</span>
+            </div>
+            <div class="note_content">
+              <span>{{ $blog.Content }}</span>
+            </div>
+          </div>
+        </a>
+
+      {{ end }}
+    {{ end }}
+
+    {{ if .Blogs }}
+      <div class="page_end">
+        <span>Looks like you've reached the end</span>
+      </div>
+    {{ end }}
+
+  </div>
+</div>
+
+{{ template "footer" }}

@@ -1,0 +1,13 @@
+{{ template "header" . }}
+{{ template "needs" }}
+
+<div class="notes_wrapper">
+  <div class="home profile">
+    <img src="/users/{{ .UserID }}/avatar.png" alt="Your profile">
+    <div class="profile_content">
+      <span>{{ .Username }}</span>
+    </div>
+  </div>
+</div>
+
+{{ template "footer" }}

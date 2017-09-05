@@ -1,0 +1,22 @@
+{{ template "header" . }}
+{{ template "needs" }}
+
+<div class="notes_wrapper">
+  <div class="home">
+
+    <div class="blog">
+      <div class="blog_c">
+        <span class="blog_title" >{{ .Blog.Title }}</span>
+        <span class="blog_content">{{ .Blog.Content }}</span>
+      </div>
+        <div class="blog_actions">
+          <a href="/edit-blog/{{ .Blog.BlogID }}" class="sec_btn">Edit this blog</a>
+          <a href="#" class="sec_btn blog_dlt" data-blog="{{ .Blog.BlogID }}" >Delete this blog</a>
+          <a href="#" class="pri_btn blog_back" >Back</a>
+        </div>
+    </div>
+
+  </div>
+</div>
+
+{{ template "footer" }}

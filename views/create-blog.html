@@ -1,0 +1,24 @@
+{{ template "header" . }}
+{{ template "needs" }}
+
+<div class="notes_wrapper">
+  <div class='edit'>
+    <div class="edit_info">
+      <img class="edit_img" src='/users/{{ .UserID }}/avatar.png' alt="Your avatar" />
+      <span>Create Blog</span>
+    </div>
+    <div class="eu_div">
+      <span class='edit_span'>Title</span>
+      <input type="text" class='e_username' placeholder='Title..' autoComplete='false' autoFocus spellCheck='false'  />
+    </div>
+    <div class="eb_div">
+      <span class='edit_span'>Content</span>
+      <textarea class="e_bio" placeholder='Content..' spellCheck='false'  ></textarea>
+    </div>
+    <div class="eb_btns">
+      <a href="#" class="pri_btn e_done create_blog" >Create Blog</a>
+    </div>
+  </div>
+</div>
+
+{{ template "footer" . }}
