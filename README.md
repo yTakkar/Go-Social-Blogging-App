@@ -49,7 +49,7 @@ DB_PASSWORD=DB PASSWORD [STRING]
 DB=DB YOU JUST CREATE [STRING]
 ```
 
-4. My root folder name is ``Go-Social-Blog-App`, if yours is different then go ahead & change it as it used for imports. It can be done easily by searching the whole project.
+4. My root folder name is `Go-Social-Blog-App`, if yours is different then go ahead & change it as it used for imports. It can be done easily by searching the whole project.
 
 5. Now run the app.
 ```javascript
