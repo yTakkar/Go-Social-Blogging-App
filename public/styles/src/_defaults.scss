@@ -10,21 +10,25 @@ $header: #f9f9f9;
 $header_border: #f7f5f5;
 $second_border: #f7f9fa;
 $third-border: #f6f7f9;
+
 @mixin center{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 @mixin modal-shadow{
   box-shadow: 0 0 18px rgba(27,31,35,0.4);
   -webkit-box-shadow: 0 0 18px rgba(27,31,35,0.4);
   -moz-box-shadow: 0 0 18px rgba(27,31,35,0.4);
 }
+
 *{
   padding: 0px;
   margin: 0px;
 }
+
 body{
   font-family: $family;
   background: $fb;
@@ -32,28 +36,39 @@ body{
   color: #3d464d;
   font-weight: normal;
 }
+
 a{
   text-decoration: none;
   color: $a;
   outline: none;
 }
+
 .a_disabled{
   cursor: not-allowed !important;
   pointer-events: none !important;
   background: #6ab9e8 !important;
 }
+
 .sec_btn_disabled{
   cursor: not-allowed !important;
   pointer-events: none !important;
   color: #d8c3c3 !important;
 }
 
-i{  pointer-events: none; }
+
+i{
+  pointer-events: none;
+}
+
 hr{
   border: 0;
   border-top: 1px solid #c1c7cd;
 }
-li{ list-style: none; }
+
+li{
+  list-style: none;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -65,22 +80,28 @@ textarea{
   outline: none;
   padding: 5px 5px;
 }
+
 input[type="submit"]::-moz-focus-inner,
 input[type="button"]::-moz-focus-inner{
   padding: 0 !important;
   border: 0 none !important;
 }
+
 textarea{
   word-break: break-all;
   font-size: 13px;
 }
+
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
 textarea:focus{
   border: 1px solid #56b4ef !important;
   box-shadow: 0px 0px 5px 1px #c8def0;
+  /*-webkit-box-shadow: 0px 0px 5px 0px #bed3dc;
+  -moz-box-shadow: 0px 0px 5px 0px #bed3dc;*/
 }
+
 input[type="submit"],
 input[type="button"],
 .pri_btn{
@@ -91,17 +112,26 @@ input[type="button"],
   border-radius: 3px;
   cursor: pointer;
   outline: none;
+
   &:hover{ opacity: .9; }
+
 }
+
 input[type="submit"]:focus,
 input[type="button"]:focus,
-.pri_btn:focus{ background: #198bd0; }
+.pri_btn:focus{
+  background: #198bd0;
+}
+
 input[type="submit"]:disabled,
 input[type="button"]:disabled{
   background: #6ab9e8 !important;
   cursor: auto !important;
+
   &:hover{ opacity: 1 !important; }
+
 }
+
 .sec_btn{
   border: 1px solid $ee;
   background: $fb;
@@ -110,15 +140,19 @@ input[type="button"]:disabled{
   cursor: pointer;
   font-weight: 600;
   outline: none;
+
   &:hover{
     color: $dark;
     background-color: #fff7f7;
   }
+
   &:focus{
     color: $dark;
     background: #f7ebeb;
   }
+
 }
+
 .tir_btn{
   border: 1px solid $ee;
   background: $ff;
@@ -126,16 +160,21 @@ input[type="button"]:disabled{
   border-radius: 3px;
   cursor: pointer;
   outline: none;
+
   &:hover{
     color: $dark;
     background-color: #ebf4fd;
   }
+
   &:focus{
     color: $dark;
     background-color: #ebf4fd;
   }
+
 }
+
 .a_pri{ color: $a; }
+
 .options{
   position: absolute;
   padding: 7px 6px;
@@ -145,10 +184,13 @@ input[type="button"]:disabled{
   -moz-box-shadow: 0 0 0 1px rgba(99,114,130,0.16), 0 8px 16px rgba(27,39,51,0.08);
   border-radius: 3px;
   z-index: 1;
+
   & ul{
     background: $ff;
+
     & li{
       background: $ff;
+
       & a,
       & label{
         background: $ff;
@@ -158,20 +200,31 @@ input[type="button"]:disabled{
         width: inherit;
         display: block;
         border-radius: 2px;
+
         &:hover{
+          /*background: $second_border;*/
           background: #54BBFF;
+          /*background: #f4f4f4;*/
+          /*color: #1b2733;*/
           color: $ff;
         }
+
       }
+
       &.o_divider{
         margin: 5px 0px 5px 0px;
       }
+
       &.menu_divider{
         border-top-color: #e6e8eb;
       }
+
     }
+
   }
+
 }
+
 input[type="file"]{
   width: 0.1px;
   height: 0.1px;
@@ -180,6 +233,7 @@ input[type="file"]{
   position: absolute;
   z-index: -2;
 }
+
 .overlay{
   position: fixed;
   width: 100%;
@@ -192,6 +246,7 @@ input[type="file"]{
   opacity: 0.5 !important;
   z-index: 2;
 }
+
 .hidden_overlay{
   position: fixed;
   width: 100%;
@@ -203,6 +258,7 @@ input[type="file"]{
   background: transparent !important;
   z-index: 2;
 }
+
 .overlay-2{
   position: fixed;
   width: 100%;
@@ -215,6 +271,7 @@ input[type="file"]{
   z-index: 20;
   display: none;
 }
+
 select{
   font-size: 14px;
   font-family: $family;
@@ -222,11 +279,16 @@ select{
   border: 1px solid $ee;
   cursor: pointer;
   outline: none;
+  /*-moz-appearance: none;*/
+  /*-webkit-appearance: none;*/
+
   &:focus{
     border-color: #56b4ef;
     box-shadow: 0px 0px 5px 1px #c8def0;
   }
+
 }
+
 #hoverdiv{
   position: absolute;
   background: #333;
@@ -239,19 +301,23 @@ select{
   display: none;
   z-index: 4;
 }
+
 .handy-notify{
   position: fixed;
   background: #333;
   left: 2%;
+  /*transform: translate(-50%, -50%);*/
   color: $ff;
   border-radius: 3px;
   padding: 12px 80px 12px 25px;
+  /*padding: 10px 30px;*/
   font-size: 15px;
   cursor: pointer;
   text-align: left;
   z-index: 3;
   top: 105%;
 }
+
 .handy-tooltip-after::after{
   content: "";
   position: absolute;
@@ -265,6 +331,7 @@ select{
   left: 45%;
   z-index: -1;
 }
+
 .handy-tooltip-before::before{
   content: "";
   position: absolute;
@@ -278,16 +345,21 @@ select{
   left: 45%;
   z-index: -1;
 }
+
 .follow{
   background: $pric !important;
   border: 1px solid $pric !important;
 }
+
 .unfollow{
   background: #6ae03b !important;
   color: white !important;
   border: 1px solid #6ae03b !important;
+
   &:focus{ background: #fbf2f2; }
+
 }
+
 // NOTHING COMPONENT
 .home_last_mssg{
   position: relative;
@@ -298,21 +370,27 @@ select{
   text-align: center;
   padding: 10px;
   cursor: default;
+
   & img{
     position: relative;
     text-align: center;
     width: 150px;
+    /*margin-bottom: 10px;*/
     display: block;
     left: 48%;
     transform: translate(-50%);
   }
+
   & span{
     position: relative;
     text-align: center;
     display: block;
     left: -5px;
+    /*top: -5px;*/
   }
+
 }
+
 .modal{
   @include center;
   position: fixed !important;
@@ -322,111 +400,148 @@ select{
   z-index: 2;
   background: $ff;
   font-size: 14px;
+
   & .modal_no{
     text-align: center;
     position: relative;
     top: 30px;
     & img{ width: 150px; }
   }
+
   & .modal_header{
     background: $header;
     border-bottom: 1px solid $header_border;
     padding: 10px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+    // font-weight: 600;
+
     & span.title{
       font-weight: 600;
     }
+
   }
+
   & .modal_middle{
     position: relative;
     padding: 10px;
+
   }
+
   & .modal_bottom{
     display: block;
     text-align: right;
     padding: 9px 5px 12px 5px;
     border-top: 1px solid $ee;
     margin-top: 0px;
+
     & a, & input[type='submit']{
       display: inline-block;
       padding: 4px 10px;
       font-weight: 600;
     }
+
   }
+
 }
+
 .modal_big{
   width: 400px;
+
   & .modal_middle{
     height: 450px;
     width: inherit;
     overflow: auto;
     padding: 0px !important;
+
     & .modal_main{
       position: relative;
       padding: 5px 0px;
+
       & .modal_items{
         margin-bottom: 5px;
         position: relative;
         padding: 0px 5px 5px 5px;
+
         & .modal_it_img{
           position: relative;
           display: inline-block;
           height: 45px;
           margin-left: 5px;
+
           & img{
             width: 45px;
             height: 45px;
             border-radius: 3px;
           }
+
         }
+
         & .modal_it_content{
           display: inline-block;
           position: relative;
           width: 83%;
           margin-left: 8px;
           top: -10px;
+
           & .modal_it_info{
             display: inline-block;
             width: 100%;
+
             & a.modal_it_username{
               font-size: 14px;
               color: $dark;
               font-weight: 600;
               display: block;
               outline: none;
+
               &:hover,&:focus{text-decoration: underline;}
+
             }
+
             & span.modal_it_light{
               color: $d_light;
               font-size: 13px;
             }
+
           }
+
           & .modal_ff{
             display: inline-block;
             position: absolute;
             right: 5px;
             top: 5px;
             text-align: right;
+
             & a{
               display: inline-block;
               padding: 5px 15px;
               font-weight: 600;
             }
+
           }
+
         }
+
         & hr{
           border-top-color: $ee;
           margin-top: 3px;
         }
+
       }
+
     }
+
   }
+
   & .modal_bottom{
     margin-top: 1px;
+
     & a:last-of-type{
       margin-right: 10px;
       margin-left: 5px;
     }
+
   }
+
 }
