@@ -28,6 +28,7 @@ func Welcome(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 // App route
 func App(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 	loggedIn(w, "/welcome", r)
+
 	id, username := M.AllSessions(r)
 
 	db := M.DB()
@@ -50,6 +51,7 @@ func App(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 // CreateBlog route
 func CreateBlog(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 	loggedIn(w, "", r)
+
 	id, username := M.AllSessions(r)
 	renderTemplates(w, "create-blog", &Page{"Create A New Blog", id, username, nil, nil})
 }
@@ -57,6 +59,7 @@ func CreateBlog(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 // ViewBlog route
 func ViewBlog(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 	loggedIn(w, "", r)
+
 	id, username := M.AllSessions(r)
 	blog := p.ByName("blogID")
 
@@ -75,6 +78,7 @@ func ViewBlog(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 // EditBlog route
 func EditBlog(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 	loggedIn(w, "", r)
+
 	id, username := M.AllSessions(r)
 	blog := p.ByName("blogID")
 

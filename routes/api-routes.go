@@ -13,6 +13,7 @@ import (
 // CreateNewBlog route
 func CreateNewBlog(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 	res := make(map[string]interface{})
+
 	db := M.DB()
 
 	title := strings.TrimSpace(r.PostFormValue("title"))

@@ -23,5 +23,6 @@ func AllSessions(r *http.Request) (interface{}, interface{}) {
 	session := GetSession(r)
 	id := session.Values["id"]
 	username := session.Values["username"]
+
 	return id, username
 }

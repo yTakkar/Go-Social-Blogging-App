@@ -28,10 +28,12 @@ func Login(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 // Logout route
 func Logout(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 	loggedIn(w, "", r)
+
 	session := M.GetSession(r)
 	delete(session.Values, "id")
 	delete(session.Values, "username")
 	session.Save(r, w)
+
 	http.Redirect(w, r, "/login", http.StatusFound)
 }
 
