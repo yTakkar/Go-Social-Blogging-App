@@ -2,3 +2,4 @@
 *.go linguist-vendored=false
 *.js linguist-vendored=false
 *.html linguist-vendored=false
+*.scss linguist-vendored=false
