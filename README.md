@@ -2,6 +2,9 @@
 
 A Social-Blogging App developed with Golang & Mysql!!
 
+### Updated Version
+Click [here](https://github.com/yTakkar/Go-Mini-Social-Network) for mini-social-network created with Golang!!
+
 # Quick Links
 1. [Screenshots](#screenshots)
 2. [Requirements](#requirements)
